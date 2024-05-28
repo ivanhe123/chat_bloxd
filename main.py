@@ -128,5 +128,5 @@ def handle_new_message(message):
     emit("chat", {"message": message, "username": username}, broadcast=True)
 
 
-
-socketio.run(app)
+if __name__ == "__main__":
+    socketio.run(app)
